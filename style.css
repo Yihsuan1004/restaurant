@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 微軟正黑體;
+}
+
+
+
+/*----導覽列設定----*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:black;
+    width: 100%;
+    height: 100px;
+}
+.navItem{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.navItem li{
+    width:20%;
+    margin: 0 5px;
+    text-align: center;
+    padding: 10px;
+    transition-duration: 1s;
+}
+.navItem a{
+    color: aliceblue;
+}
+
+.navItem li:hover{
+    color: black;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+nav >h1{
+    color: aliceblue;
+}
+.button{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 50px;
+}
+.bar{
+    cursor: pointer;
+    position: absolute;
+    display: none;
+}
+
+.bar div{
+    width: 30px;
+    height: 5px;
+    background-color: azure;
+    margin: 5px;
+}
+
+
+
+@media screen and (max-width:768px) {
+    nav >h1{
+        width: 300px;
+        padding-left: 15%;
+    }  
+    nav .bar {
+        display: block;
+    }
+    nav .navItem li{
+        font-size: 30px;
+        font-weight: 800;
+        width: 100%;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1.5px solid rgba(255,255,255,0.8);             
+    }
+    nav .navItem a{
+        color:white;                 
+    }
+    nav .navItem {
+        width: 100%;
+        top:100px;
+        position: absolute;
+        display: none;
+        background-color: #6D0303;
+    }
+    nav .navItem ul{
+        display: block;
+    }
+    nav .active{
+        display: block;
+        width: 100%;
+        max-height: 800px;
+    }
+    nav .navItem li:hover{
+        border: 5px solid white;
+    }
+
+
+}
+
+
+@media screen and (max-width:480px){
+    nav .navItem{
+        max-height: 600px;
+    }
+    nav .navItem li{
+        font-size: 24px;        
+    }
+}
+
+
+
+/*-----主頁設定-----*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D0303;
+    line-height: 0;/*解決div和圖片之間有縫隙*/
+}
+.container2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 768px;
+    height: 400px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.visible{
+    display: none;
+}
+.banner{
+    width: 1280px;
+    height: 750px;
+    background-image: url(img/banner.jpg);
+    text-align: center;
+}
+
+#topic{
+    width: 600px;
+    position: relative;
+    bottom: 10px;
+    font-size: 48px; 
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#slogan{
+    width: 600px;
+    position: relative;
+    top:80px;
+    color: darkred;
+    font-size: 28px; 
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/*-------特色-------*/
+.feature{
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+.feature-topic{
+    position: absolute;
+    top:50px;
+    max-width: 800px;
+    padding: 0 5%;
+    height: auto;
+    color: black;
+    text-align: center;
+    line-height:50px;
+}
+.content{
+    position: relative;
+    top:80px;
+    background-color: #6D0303;
+    width: 350px;
+    height: 60%;
+    margin:0 10px;
+    text-align: center;
+    box-shadow: 5px 4px 10px black;
+}
+.content img{
+    width: 100%;
+    height: auto;
+}
+.content h3 {
+    margin: 10px 15px;
+    padding: 10px 0 ;
+    border-bottom: 1px solid wheat;
+    color: wheat;
+}
+.content p{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 16px;
+    color: wheat;
+}
+
+@media screen and (max-width:768px){
+    main .container2 {
+        max-width: 468px;
+        height: 243px;
+    } 
+    main #topic{
+        width: 468px;
+        text-align: center;
+        font-size: 36px;
+    }
+    main #slogan{
+        width: 468px;
+        font-size: 20px;
+    }
+    main .feature-topic{
+        line-height: 40px;
+    }
+    main .feature{
+        height: 1600px;
+        display: flex;
+        flex-direction: column;
+    }
+    main .content{
+        display: flex;
+        flex-direction: column;
+        width: 468px;
+        height: 450px;
+        margin-bottom: 20px;
+    }
+}    
+@media screen and (max-width:480px){
+    main .container2 {
+        max-width: 300px;
+        height: 300px;
+    } 
+    main #topic{
+        width: 300px;
+        text-align: center;
+        font-size: 24px;
+    }
+    main #slogan{
+        width: 300px;
+        font-size: 16px;
+    }
+
+    main .feature-topic{
+        line-height: 40px;
+    }
+    main .feature{
+        height: 1600px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    main .content{
+        position: relative;
+        top: 150px;
+        width: 300px;
+        height: 400px;
+    }
+}
+
+
+
+
+/*----footer設定-----*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+.footerItem ul{
+    display: inline-flex;
+}
+.footerItem li{
+    padding: 0 10px;
+    color: rgba(255,255,255,0.6);
+}
+
+#copyright{
+   word-spacing: 10px;
+   color: rgba(255,255,255,0.6);
+}
+
+
+
+@media screen and (max-width:768px) {
+    body footer{
+        height: 300px;
+    }
+
+    footer .footerItem ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .footerItem li{
+        font-size: 18px;
+    }
+    .lhead{
+        margin-top: 40px;
+    }
+}
