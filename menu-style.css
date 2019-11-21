@@ -197,7 +197,7 @@ img:hover{
     font-size: 32px;
     text-align: center;
     position: absolute;
-    bottom: -100px;
+    bottom: -80px;
     right: 5%;
     cursor: pointer;
 }
@@ -218,7 +218,7 @@ img:hover{
         top:200px;
     }
     .float-menu{
-        bottom: 550px;
+        bottom: 650px;
     }
 }
 

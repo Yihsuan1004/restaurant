@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/logo.png" sizes="16*16">
+    <link rel="stylesheet" href="reservation-style.css" type="text/css">
+    <title>website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Mr.Kim-Yo</h1>
+                <ul class="navItem">
+                    <li class="navbar"><a href="index.html" id="link1">餐廳介紹</a></li>
+                    <li class="navbar"><a href="menu.html">菜單</a></li>
+                    <li class="navbar"><a href="order.html">線上點菜</a></li>
+                    <li class="navbar"><a  href="#">預訂與聯絡資訊</a></li>
+                </ul>
+                <div class="button">
+                    <div class="bar">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                <div class="cancel"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="call">
+                <img id="phone"src="img/tel-01.png">
+                <img id="num1"class="curl" src="img/1-01.png">
+                <img id="num2"class="curl" src="img/2-01.png">
+            </div>
+            <div class="title">
+                <h1>Reservation</h1>
+                <h1>Contact us</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div id="block-1">
+                    <div class="subtitle">
+                        <h3>線上訂位</h3>
+                    </div>
+                    <form>
+                        <ul id="ul-1">
+                            <li><label>訂位日期 &nbsp;<input id="date" type="date"></label></li>
+                            <li>
+                                <label>訂位時間 &nbsp;
+                                    <select>
+                                        <optgroup label="上午">
+                                            <option value="1">11:00</option>
+                                            <option value="2">11:30</option>
+                                            <option value="3">12:00</option>
+                                        </optgroup>
+                                        <optgroup label="下午">
+                                            <option value="4">12:30</option>
+                                            <option value="5">13:00</option>
+                                            <option value="6">13:30</option>
+                                        </optgroup>
+                                        <optgroup label="晚上">
+                                            <option value="7">17:00</option>
+                                            <option value="8">17:30</option>
+                                            <option value="9">18:00</option>
+                                            <option value="10">18:30</option>
+                                            <option value="11">19:00</option>
+                                            <option value="12">19:30</option>
+                                        </optgroup>
+                                    </select>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul id="ul-2">
+                            <li>
+                                <label>訂位人數 &nbsp;
+                                    <select name="訂位人數">
+                                        <option value="p1">1位</option>
+                                        <option value="p2">2位</option>
+                                        <option value="p3">3位</option>
+                                        <option value="p4">4位</option>
+                                        <option value="p5">5位</option>
+                                        <option value="p6">6位</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li id="li-1">
+                                <label>隨行兒童 &nbsp;
+                                    <select name="隨行兒童">
+                                        <option value="k0">0位</option>
+                                        <option value="k1">1位</option>
+                                        <option value="k2">2位</option>
+                                        <option value="k3">3位</option>
+                                        <option value="k4">4位</option>
+                                    </select>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul id="ul-3">
+                            <li>
+                                <label>姓名 &nbsp;
+                                    <input class="set" type="text" placeholder="訂位者姓名" required>
+                                </label>
+                            </li>
+                            <li>
+                                <label>電話 &nbsp;
+                                    <input class="set" type="tel" placeholder="聯絡電話" required>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="btn-3"><input id="submit-2" type="submit" value="確認訂位"></div>
+                    </form>
+                </div>
+                <div id="map"></div>
+                <div class="container2">
+                    <div id="block-2">
+                        <div class="subtitle-2">
+                            <h3>餐廳位址和營業時間</h3>
+                            <div class="container3">
+                                <p class="gold">新北市北山區幸福路30號2號1樓</p>
+                                <p>營業時間為週二至週日，週一固定公休。<br>上午11點至14點，晚上17點至20點。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="block-3">
+                        <div class="subtitle-2"><h3>聯絡我們</h3></div>
+                        <div class="ul-4">
+                            <ul>
+                                <li>
+                                    <input class="set-2" type="text" placeholder="姓名" required>
+                                </li>
+                                <li>
+                                    <input class="set-2" type="email" placeholder="電子郵件" required>
+                                </li>
+                                <li>
+                                    <input class="set-2" type="text" placeholder="主旨" required>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text">
+                            <textarea id="text" placeholder="請留下您的意見"></textarea>
+                        </div>
+                        <div class="container4">
+                            <input id="submit-3" type="submit" value="送出">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer> 
+        <div class="footerItem">
+            <ul>
+                <li id="copyright">Copyrigtht ©1990-2019 Mr.Kim-Yo</li>
+                <li class="lhead">聯絡電話:</li>
+                <li>02-12345678</li>
+                <li class="lhead">地址:</li>
+                <li>新北市北山區幸福路30號2號1樓</li>
+            </ul>    
+        </div>
+    </footer>
+    <script>
+        var map;
+        function initMap() {
+          var restaurant =  {lat: 25.0454632, lng: 121.5674009};
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: restaurant,
+            zoom: 16
+          });
+          var marker = new google.maps.Marker({
+            position: restaurant,
+            map: map
+         });
+          
+        }
+      </script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmMKrv1Uh1wVl9aGDZ7o8Wtvqz7s5v4uE&callback=initMap"
+    type="text/javascript"></script>
+</body>
+</html>
+

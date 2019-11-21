@@ -184,8 +184,10 @@ nav >h1{
     color: black;
     text-align: center;
     line-height:50px;
+    display: none;
 }
 .content{
+    display: none;
     position: relative;
     top:80px;
     background-color: #6D0303;
