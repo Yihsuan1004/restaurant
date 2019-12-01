@@ -106,7 +106,6 @@ nav >h1{
 
 }
 
-
 @media screen and (max-width:480px){
     nav .navItem{
         max-height: 600px;
@@ -117,16 +116,51 @@ nav >h1{
 }
  
 
+/*-----輔助按鈕設定-----*/
+.down-btn, .up-btn{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    color:white;
+    background-color: rgba(233, 173, 22, 0.534);
+    font-size: 32px;
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    cursor: pointer;
+}
+.down-btn{
+    bottom: -15%;
+}
+@media screen and (max-width:768px){
+    .down-btn{
+        top: 20%;
+    }
+    .up-btn{
+        bottom: 3%;
+    }
+    
+}
+@media screen and (max-width:480px){
+    .down-btn{
+        top:18%;
+    }
+    .up-btn{
+        bottom: 0%;
+    }
+}
+
 
 
 
 /*-----主頁設定-----*/
 main{
     background:url(./img/menubg.jpg) no-repeat center center;
-    background-size: 1920px 1200px;
+    background-size: cover;
+    
 }
 .main-content{
-    height: 100%;
     background-color: #6D0303;
     max-width: 1280px;
     margin: 0 auto;
@@ -179,7 +213,6 @@ img{
 }
 .menuItem{
     width: 25%;
-    height: 37%;
     margin: 15px;
     background-color: #6D0303;
     overflow: hidden;
@@ -188,37 +221,12 @@ img{
 img:hover{
     transform: scale(1.2);
 }
-.float-menu{
-    width: 45px;
-    height: 45px;
-    border-radius:5px;
-    color:white;
-    background-color: goldenrod;
-    font-size: 32px;
-    text-align: center;
-    position: absolute;
-    bottom: -80px;
-    right: 5%;
-    cursor: pointer;
-}
+
 
 
 @media screen and (max-width:768px){
     .content .menuItem{
         width: 40%;
-    }
-    
-    body main{
-        height: 1400px;
-    }
-    
-    main .content{
-        height: 65%;
-        position: relative;
-        top:200px;
-    }
-    .float-menu{
-        bottom: 650px;
     }
 }
 
@@ -226,16 +234,8 @@ img:hover{
     main .content .menuItem{
         width: 80%;
     }
-    body main{
-        height: 2400px;
-    }
     main .content{
-        height: 35%;
-        position: relative;
-        top:700px;
-    }
-    .float-menu{
-        bottom: 200px;
+        padding: 15% 0;
     }
 }
 
@@ -278,25 +278,11 @@ img:hover{
 .menulist li{
     padding: 10px 0;
 }
-.back-btn{
-    width: 50px;
-    height: 50px;
-    background-color:#6D0303;
-    color: white;
-    position: absolute;
-    text-align: center;
-    border-radius: 8px;
-    top:800px;
-    left:90%;
-    cursor: pointer;
-}
+
 @media screen and (max-width:768px){
     .menulist{
         width: 40%;
         margin-bottom: 2%;
-    }
-    .back-btn{
-        top:1600px;
     }
 }
 
@@ -305,10 +291,7 @@ img:hover{
         width: 80%;
         margin-bottom: 2%;
     }
-    .back-btn{
-        left: 85%;
-        top:3200px;
-    }
+
 }
 
 

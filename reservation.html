@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,23 @@
     <link rel="stylesheet" href="reservation-style.css" type="text/css">
     <title>website</title>
 </head>
+
 <body>
     <header>
         <nav>
             <h1>Mr.Kim-Yo</h1>
-                <ul class="navItem">
-                    <li class="navbar"><a href="index.html" id="link1">餐廳介紹</a></li>
-                    <li class="navbar"><a href="menu.html">菜單</a></li>
-                    <li class="navbar"><a href="order.html">線上點菜</a></li>
-                    <li class="navbar"><a  href="#">預訂與聯絡資訊</a></li>
-                </ul>
-                <div class="button">
-                    <div class="bar">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+            <ul class="navItem">
+                <li class="navbar"><a href="index.html" id="link1">餐廳介紹</a></li>
+                <li class="navbar"><a href="menu.html">菜單</a></li>
+                <li class="navbar"><a href="order.html">線上點菜</a></li>
+                <li class="navbar"><a href="reservation.html">預訂與聯絡資訊</a></li>
+            </ul>
+            <div class="button">
+                <div class="bar">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <div class="cancel"></div>
             </div>
         </nav>
@@ -31,9 +33,9 @@
     <main>
         <div class="banner">
             <div class="call">
-                <img id="phone"src="img/tel-01.png">
-                <img id="num1"class="curl" src="img/1-01.png">
-                <img id="num2"class="curl" src="img/2-01.png">
+                <img id="phone" src="img/tel-01.png">
+                <img id="num1" class="curl" src="img/1-01.png">
+                <img id="num2" class="curl" src="img/2-01.png">
             </div>
             <div class="title">
                 <h1>Reservation</h1>
@@ -126,32 +128,37 @@
                         </div>
                     </div>
                     <div id="block-3">
-                        <div class="subtitle-2"><h3>聯絡我們</h3></div>
-                        <div class="ul-4">
-                            <ul>
-                                <li>
-                                    <input class="set-2" type="text" placeholder="姓名" required>
-                                </li>
-                                <li>
-                                    <input class="set-2" type="email" placeholder="電子郵件" required>
-                                </li>
-                                <li>
-                                    <input class="set-2" type="text" placeholder="主旨" required>
-                                </li>
-                            </ul>
+                        <div class="subtitle-2">
+                            <h3>聯絡我們</h3>
                         </div>
-                        <div class="text">
-                            <textarea id="text" placeholder="請留下您的意見"></textarea>
-                        </div>
-                        <div class="container4">
-                            <input id="submit-3" type="submit" value="送出">
-                        </div>
+                        <form>
+                            <div class="ul-4">
+                                <ul>
+                                    <li>
+                                        <input class="set-2" type="text" placeholder="姓名" required>
+                                    </li>
+                                    <li>
+                                        <input class="set-2" type="email" placeholder="電子郵件" required>
+                                    </li>
+                                    <li>
+                                        <input class="set-2" type="text" placeholder="主旨" required>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text">
+                                <textarea id="text" placeholder="請留下您的意見"></textarea>
+                                <div>
+                                    <input id="submit-3" type="submit" value="送出">
+                                </div>
+                                
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer> 
+    <footer>
         <div class="footerItem">
             <ul>
                 <li id="copyright">Copyrigtht ©1990-2019 Mr.Kim-Yo</li>
@@ -159,28 +166,33 @@
                 <li>02-12345678</li>
                 <li class="lhead">地址:</li>
                 <li>新北市北山區幸福路30號2號1樓</li>
-            </ul>    
+            </ul>
         </div>
     </footer>
     <script>
         var map;
+
         function initMap() {
-          var restaurant =  {lat: 25.0454632, lng: 121.5674009};
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: restaurant,
-            zoom: 16
-          });
-          var marker = new google.maps.Marker({
-            position: restaurant,
-            map: map
-         });
-          
+            var restaurant = {
+                lat: 25.0454632,
+                lng: 121.5674009
+            };
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: restaurant,
+                zoom: 16
+            });
+            var marker = new google.maps.Marker({
+                position: restaurant,
+                map: map
+            });
+
         }
-      </script>
+    </script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="./js/main.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmMKrv1Uh1wVl9aGDZ7o8Wtvqz7s5v4uE&callback=initMap"
-    type="text/javascript"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmMKrv1Uh1wVl9aGDZ7o8Wtvqz7s5v4uE&callback=initMap"
+        type="text/javascript"></script>
 </body>
-</html>
 
+</html>

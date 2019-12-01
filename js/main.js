@@ -6,14 +6,14 @@ $(document).ready(() => {
             $("nav").toggleClass('active');
     });
 
-    $(".float-menu").click(()=> {
+    $(".down-btn").click(()=> {
         //取得顯示內容的位置
         var target = $(".container").offset().top;
         //滾動到指定位置
         $("html,body").animate({scrollTop:target},800);
     });
 
-    $(".back-btn").click(()=> {
+    $(".up-btn").click(()=> {
         //取得顯示內容的位置
         var target = $("nav").offset().top;
         //滾動到指定位置
